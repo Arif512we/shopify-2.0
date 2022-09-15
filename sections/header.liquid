@@ -50,11 +50,16 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
   }
 
   .list-menu--inline {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+   width: 100%;
+   
+   
   }
 
   summary.list-menu__item {
@@ -65,8 +70,10 @@
     display: flex;
     align-items: center;
     line-height: calc(1 + 0.3 / var(--font-body-scale));
+    font-family: var(--font-heading-family);
+    font-size: 24px;
   }
-
+ 
   .list-menu__item--link {
     text-decoration: none;
     padding-bottom: 1rem;
